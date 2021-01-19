@@ -22,5 +22,18 @@
         padding: 10px 15px;
       }
     }
+    .user-image {
+      background-position: center;
+      background-size: contain;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+
+    .sign-out-container {
+      display: flex;
+      align-items: center;
+    }
+      
   }
-  
+
