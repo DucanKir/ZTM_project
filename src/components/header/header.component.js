@@ -1,9 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
+
 import './header.styles.scss';
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart/cart-dropdown.component';
+import {createStructuredSelector} from 'reselect';
+import {selectHidden} from '../../redux/cart/cart.selectors';
+import {selectCurrentUser} from '../../redux/user/user.selector'
+
 
 import {auth} from '../../firebase/firebase.utils';
 
@@ -31,7 +36,7 @@ const Header = ({currentUser, hidden}) => (
                     <div className="user-image" style={{backgroundImage: `url(${currentUser.photoURL})`}}></div>
                 </div>
                 :
-                <Link className="option" to='signin'>SIGN IN</Link>
+                <Link className="option" to='/signin'>SIGN IN</Link>
             }
             <CartIcon />
         </div>
@@ -40,9 +45,9 @@ const Header = ({currentUser, hidden}) => (
     </div>
 )
 
-const mapStateToProps = ({user: {currentUser}, cart: {hidden}}) => ({
-    currentUser,
-    hidden
+const mapStateToProps =  createStructuredSelector({
+    currentUser: selectCurrentUser,
+    hidden: selectHidden
 })
 
 export default connect(mapStateToProps)(Header);
