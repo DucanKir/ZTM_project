@@ -40,6 +40,11 @@
     .remove-button {
       padding-left: 12px;
       cursor: pointer;
+
+      @media screen and (max-width: 800px){
+        width: unset;
+        padding-left: 0;
+      }
     }
   }
   
