@@ -1,5 +1,5 @@
 # Crown Clothing
-Zero To Mustery Cuorse React.js project
+Zero To Mastery Cuorse React.js project
 
 ## Description:
 Clothes shop application. 
