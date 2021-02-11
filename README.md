@@ -38,6 +38,6 @@ One can pay for items in cart using test card details provided on check out page
 * Stripe
 
 ### Mobile Verson: 
-![](https://user-images.githubusercontent.com/51081298/107640251-e7210980-6c69-11eb-8885-8aec32f4322e.png)![](https://user-images.githubusercontent.com/51081298/107640350-0ddf4000-6c6a-11eb-8a92-6fb014830e79.png)
+![](https://user-images.githubusercontent.com/51081298/107640251-e7210980-6c69-11eb-8885-8aec32f4322e.png)   ![](https://user-images.githubusercontent.com/51081298/107640350-0ddf4000-6c6a-11eb-8a92-6fb014830e79.png)
 
 
