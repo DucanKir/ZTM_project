@@ -21,6 +21,13 @@
     .price {
       width: 23%;
     }
+
+    .price {
+      @media screen and (max-width: 800px){
+        text-align: center;
+      }
+    }
+    
     .quantity {
       display: flex;
 

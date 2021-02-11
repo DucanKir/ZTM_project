@@ -10,6 +10,10 @@
       width: unset;
       margin-bottom: 50px;
     }
+
+    .empty-cart {
+      margin-top: 40px;
+    }
   
     .checkout-header {
       width: 100%;
@@ -18,21 +22,24 @@
       justify-content: space-between;
       border-bottom: 1px solid darkgrey;
 
-      @media screen and (max-width: 800px){
-        width: 90%;
-      }
   
       .header-block {
         text-transform: capitalize;
         width: 23%;
 
         @media screen and (max-width: 800px){
-          width:15%;
+          width:unset;
+          text-align: center;
+          justify-content: unset;
         }
 
   
         &:last-child {
           width: 8%;
+
+          @media screen and (max-width: 800px){
+            width: unset;
+          }
         }
       }
     }
